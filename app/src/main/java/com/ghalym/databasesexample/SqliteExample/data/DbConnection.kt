@@ -7,10 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.os.Build
 import androidx.annotation.RequiresApi
 
-@RequiresApi(Build.VERSION_CODES.P)
-class DbConnection(context: Context?, name: String?, version: Int, openParams: SQLiteDatabase.OpenParams) :
-    SQLiteOpenHelper(context, name, version, openParams) {
-
+class DbConnection(context: Context?, name: String?, factory: SQLiteDatabase.CursorFactory?, version: Int) :
+    SQLiteOpenHelper(context, name, factory, version) {
     val TABLE_NOTE_NAME = "Note";
     val TABLE_NOTE_COLUMN_ID_NAME = "id";
     val TABLE_NOTE_COLUMN_TITLE_NAME = "title";
@@ -36,7 +34,7 @@ class DbConnection(context: Context?, name: String?, version: Int, openParams: S
         db?.close();
     }
 
-    fun insertNoteToDb(note: Note): Long? {
+    fun insertNoteToDb(note: Note): Boolean {
         var contentValues = ContentValues();
         contentValues.put("$TABLE_NOTE_COLUMN_TITLE_NAME", note.title);
         contentValues.put("$TABLE_NOTE_COLUMN_CONTENT_NAME", note.content);
@@ -44,8 +42,10 @@ class DbConnection(context: Context?, name: String?, version: Int, openParams: S
         openDb()
         val result = db?.insert("$TABLE_NOTE_NAME", null, contentValues);
         closeDb()
-
-        return result;
+        if (!result!!.equals(-1)) {
+            return true;
+        }
+        return false;
     }
 
     fun removeNoteFromDb(note: Note): Boolean {

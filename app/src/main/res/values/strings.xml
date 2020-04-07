@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DataBasesExample</string>
+
+    <string name="insert_error">Error in adding note</string>
 </resources>
