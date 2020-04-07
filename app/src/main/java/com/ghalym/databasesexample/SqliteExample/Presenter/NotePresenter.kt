@@ -14,12 +14,6 @@ class NotePresenter(val iNoteView: INoteView, val context: Context) {
         noteRepository = NoteRepository(context, "db", null, 1);
     }
 
-    fun addNote(note: Note) {
-        iNoteView.onShowLoading()
-        val result = noteRepository.insertNoteToDb(note);
-        if (result) iNoteView.onAddSuccess() else iNoteView.onError(context.getString(R.string.insert_error))
-    }
-
     fun removeNoteFromDb(note: Note) {
         iNoteView.onShowLoading()
         val result = noteRepository.removeNoteFromDb(note);
@@ -30,12 +24,6 @@ class NotePresenter(val iNoteView: INoteView, val context: Context) {
         iNoteView.onShowLoading()
         val result = noteRepository.getAllNote();
         iNoteView.onFetchData(result);
-    }
-
-    fun updateNote(note: Note) {
-        iNoteView.onShowLoading()
-        val result = noteRepository.updateNote(note);
-        if (result) iNoteView.onEditSuccess() else iNoteView.onError(context.getString(R.string.edit_note_error))
     }
 
     fun deleteAllNotes() {
