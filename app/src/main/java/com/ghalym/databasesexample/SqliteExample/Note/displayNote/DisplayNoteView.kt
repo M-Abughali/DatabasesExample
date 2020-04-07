@@ -25,14 +25,20 @@ class DisplayNotesActivity : AppCompatActivity(),
         setContentView(R.layout.activity_display_notes)
         presenter = DisplayNotePresenter(this, this);
         adapter = NoteAdapter(data);
-        adapter.onShowOptionMenu=this
+        adapter.onShowOptionMenu = this
         rvNotes.layoutManager = LinearLayoutManager(this);
         rvNotes.adapter = adapter;
-        presenter.getAllNote();
+
 
     }
 
-    override fun onDeletSuccess(position:Int) {
+    override fun onResume() {
+        super.onResume()
+        data.clear()
+        presenter.getAllNote();
+    }
+
+    override fun onDeletSuccess(position: Int) {
         data.removeAt(position)
         adapter.notifyDataSetChanged();
     }
@@ -70,10 +76,11 @@ class DisplayNotesActivity : AppCompatActivity(),
             when (it.itemId) {
                 R.id.btnUpdate -> {
                     val intent = Intent(this, UpdateNoteActivity::class.java);
+                    intent.putExtra("note", data[position])
                     startActivity(intent)
                 }
 
-                R.id.btnDelete -> presenter.removeNoteFromDb(data[position],position)
+                R.id.btnDelete -> presenter.removeNoteFromDb(data[position], position)
 
             }
 

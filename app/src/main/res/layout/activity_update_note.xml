@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SqliteExample.Note.addNote.AddNoteActivity">
+
+    <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_write_title"
+
+    />
+
+    <EditText
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_write_content"
+
+
+    />
+
+    <Button
+            android:id="@+id/btnUpdate"
+            android:text="@string/update_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+    <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+    />
+</LinearLayout>

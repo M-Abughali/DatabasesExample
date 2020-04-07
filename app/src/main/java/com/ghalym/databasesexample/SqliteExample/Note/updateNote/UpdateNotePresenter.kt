@@ -17,8 +17,9 @@ class UpdateNotePresenter(val iUpdateNoteView: IUpdateNoteView, val context: Con
     fun updateNote(note: Note) {
         iUpdateNoteView.onShowLoading()
         val result = noteRepository.updateNote(note);
-        iUpdateNoteView.onHideLoading()
         if (result) iUpdateNoteView.onUpdateSuccess() else iUpdateNoteView.onError(context.getString(R.string.edit_note_error))
+        iUpdateNoteView.onHideLoading()
+
     }
 
 

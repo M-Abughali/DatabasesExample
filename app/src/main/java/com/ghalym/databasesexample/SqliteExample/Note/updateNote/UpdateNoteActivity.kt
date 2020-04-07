@@ -6,7 +6,10 @@ import android.view.View
 import android.widget.Toast
 import com.ghalym.databasesexample.R
 import com.ghalym.databasesexample.SqliteExample.Note.data.Note
-import kotlinx.android.synthetic.main.activity_add_note.*
+import kotlinx.android.synthetic.main.activity_add_note.editContent
+import kotlinx.android.synthetic.main.activity_add_note.editTitle
+import kotlinx.android.synthetic.main.activity_add_note.loader
+import kotlinx.android.synthetic.main.activity_update_note.*
 
 class UpdateNoteActivity : AppCompatActivity(),
     IUpdateNoteView {
@@ -14,13 +17,16 @@ class UpdateNoteActivity : AppCompatActivity(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_note)
+        setContentView(R.layout.activity_update_note)
         presenter = UpdateNotePresenter(this, this);
 
-        btnAdd.setOnClickListener {
+        val note = intent.getSerializableExtra("note") as Note;
+        editTitle.setText(note.title)
+        editContent.setText(note.content)
+        btnUpdate.setOnClickListener {
             var title = editTitle.text.toString();
             var content = editContent.text.toString();
-            presenter.updateNote(Note(title = title, content = content));
+            presenter.updateNote(Note(id = note.id, title = title, content = content));
         }
     }
 
