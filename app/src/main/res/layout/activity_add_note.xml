@@ -3,25 +3,32 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".SqliteExample.ui.NoteActivity">
+        tools:context=".SqliteExample.ui.AddNoteActivity">
 
-    <Button
-            android:id="@+id/btnGoToAddNote"
+    <EditText
+            android:id="@+id/editTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_go_to_add"
+            android:hint="@string/lbl_write_title"
+
     />
 
-
-    <Button
-            android:id="@+id/btnGoToDisplayNotes"
+    <EditText
+            android:id="@+id/editContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_go_to_display_notes"
+            android:hint="@string/lbl_write_content"
+
+
     />
 
-
+    <Button
+            android:id="@+id/btnAdd"
+            android:text="@string/lbl_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
 </LinearLayout>

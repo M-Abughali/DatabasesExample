@@ -5,4 +5,17 @@
     <string name="delete_note_error">Error in delete note</string>
     <string name="edit_note_error">Error in Edit note</string>
     <string name="delete_allNotes_error">Error in delete all notes</string>
+
+    <string name="lbl_go_to_add">Go to Add Note</string>
+    <string name="lbl_go_to_display_notes">Go to Add Note</string>
+    <string name="delete_all_notes">Delete all Notes</string>
+
+
+    <string name="lbl_write_title">Write Title</string>
+    <string name="lbl_write_content">Write Content</string>
+
+    <string name="lbl_add">Add Note</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="update_note">Update Note</string>
+
 </resources>
