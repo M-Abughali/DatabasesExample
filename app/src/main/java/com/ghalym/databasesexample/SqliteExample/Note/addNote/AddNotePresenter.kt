@@ -10,7 +10,7 @@ class AddNotePresenter(val iAddNoteView: IAddNoteView, val context: Context) {
     val noteRepository: NoteRepository;
 
     init {
-        noteRepository = NoteRepository(context, "db", null, 1);
+        noteRepository = NoteRepository(context, null);
     }
 
     fun addNote(note: Note) {

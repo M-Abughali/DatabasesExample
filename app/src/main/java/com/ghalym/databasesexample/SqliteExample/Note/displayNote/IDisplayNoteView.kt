@@ -1,9 +1,9 @@
-package com.ghalym.databasesexample.SqliteExample.ui
+package com.ghalym.databasesexample.SqliteExample.Note.displayNote
 
 import com.ghalym.databasesexample.SqliteExample.ICommonView
 import com.ghalym.databasesexample.SqliteExample.Note.data.Note
 
-interface INoteView : ICommonView {
+interface IDisplayNoteView : ICommonView {
 
     fun onDeletSuccess();
     fun onDeleteAllSuccess();

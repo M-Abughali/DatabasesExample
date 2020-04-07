@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.addNote
+package com.ghalym.databasesexample.SqliteExample.Note.updateNote
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.addNote
+package com.ghalym.databasesexample.SqliteExample.Note.updateNote
 
 import android.content.Context
 import com.ghalym.databasesexample.R
@@ -10,7 +10,7 @@ class UpdateNotePresenter(val iUpdateNoteView: IUpdateNoteView, val context: Con
     val noteRepository: NoteRepository;
 
     init {
-        noteRepository = NoteRepository(context, "db", null, 1);
+        noteRepository = NoteRepository(context, null);
     }
 
 

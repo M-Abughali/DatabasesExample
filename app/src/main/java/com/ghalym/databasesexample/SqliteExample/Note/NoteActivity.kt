@@ -4,7 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.SqliteExample.Note.addNote.UpdateNoteActivity
+import com.ghalym.databasesexample.SqliteExample.Note.addNote.AddNoteActivity
+import com.ghalym.databasesexample.SqliteExample.Note.displayNote.DisplayNotesActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class NoteActivity : AppCompatActivity() {
@@ -15,14 +16,14 @@ class NoteActivity : AppCompatActivity() {
 
         btnGoToAddNote.setOnClickListener {
 
-            val intent = Intent(this, UpdateNoteActivity::class.java);
+            val intent = Intent(this, AddNoteActivity::class.java);
             startActivity(intent)
         }
 
 
         btnGoToDisplayNotes.setOnClickListener {
 
-            val intent = Intent(this, UpdateNoteActivity::class.java);
+            val intent = Intent(this, DisplayNotesActivity::class.java);
             startActivity(intent)
         }
     }

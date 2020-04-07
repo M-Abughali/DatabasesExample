@@ -5,8 +5,10 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-final class NoteRepository(context: Context?, name: String?, factory: SQLiteDatabase.CursorFactory?, version: Int) :
-    SQLiteOpenHelper(context, name, factory, version) {
+val DbName="db";
+val DbVersion=1;
+final class NoteRepository(context: Context?, factory: SQLiteDatabase.CursorFactory?) :
+    SQLiteOpenHelper(context,DbName, factory, DbVersion) {
     private val TABLE_NOTE_NAME = "Note";
     private val TABLE_NOTE_COLUMN_ID_NAME = "id";
     private val TABLE_NOTE_COLUMN_TITLE_NAME = "title";
@@ -63,8 +65,6 @@ final class NoteRepository(context: Context?, name: String?, factory: SQLiteData
         val allNotes = ArrayList<Note>()
         openDb()
         val curser = db?.rawQuery("select * from $TABLE_NOTE_NAME", null);
-        closeDb()
-
         while (curser!!.moveToNext()) {
 
             val id = curser.getInt(curser.getColumnIndex("$TABLE_NOTE_COLUMN_ID_NAME"));
@@ -74,7 +74,7 @@ final class NoteRepository(context: Context?, name: String?, factory: SQLiteData
             val note = Note(id, title, content);
             allNotes.add(note);
         }
-
+        closeDb()
         return allNotes;
 
     }
