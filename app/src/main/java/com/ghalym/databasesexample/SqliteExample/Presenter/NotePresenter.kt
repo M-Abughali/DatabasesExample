@@ -2,8 +2,8 @@ package com.ghalym.databasesexample.SqliteExample.Presenter
 
 import android.content.Context
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.SqliteExample.data.NoteRepository
-import com.ghalym.databasesexample.SqliteExample.data.Note
+import com.ghalym.databasesexample.SqliteExample.Note.data.NoteRepository
+import com.ghalym.databasesexample.SqliteExample.Note.data.Note
 import com.ghalym.databasesexample.SqliteExample.ui.INoteView
 
 class NotePresenter(val iNoteView: INoteView, val context: Context) {

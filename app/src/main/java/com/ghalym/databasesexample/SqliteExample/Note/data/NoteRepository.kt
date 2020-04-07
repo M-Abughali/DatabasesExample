@@ -1,11 +1,9 @@
-package com.ghalym.databasesexample.SqliteExample.data
+package com.ghalym.databasesexample.SqliteExample.Note.data
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.os.Build
-import androidx.annotation.RequiresApi
 
 final class NoteRepository(context: Context?, name: String?, factory: SQLiteDatabase.CursorFactory?, version: Int) :
     SQLiteOpenHelper(context, name, factory, version) {

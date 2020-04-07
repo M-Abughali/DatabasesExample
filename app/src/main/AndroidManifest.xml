@@ -11,9 +11,9 @@
             android:theme="@style/AppTheme">
         <activity android:name=".SqliteExample.ui.DisplayNotesActivity">
         </activity>
-        <activity android:name=".SqliteExample.ui.AddNoteActivity">
+        <activity android:name="com.ghalym.databasesexample.SqliteExample.Note.addNote.UpdateNoteActivity">
         </activity>
-        <activity android:name=".SqliteExample.ui.NoteActivity">
+        <activity android:name=".SqliteExample.Note.NoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
