@@ -2,4 +2,7 @@
     <string name="app_name">DataBasesExample</string>
 
     <string name="insert_error">Error in adding note</string>
+    <string name="delete_note_error">Error in delete note</string>
+    <string name="edit_note_error">Error in Edit note</string>
+    <string name="delete_allNotes_error">Error in delete all notes</string>
 </resources>
