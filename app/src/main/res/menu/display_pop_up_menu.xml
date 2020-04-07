@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/btnDelete"
+            android:title="@string/delete_note"/>
+    <item android:id="@+id/btnUpdate"
+          android:title="@string/update_note"/>
+</menu>

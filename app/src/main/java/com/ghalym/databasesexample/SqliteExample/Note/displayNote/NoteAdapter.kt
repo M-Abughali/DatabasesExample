@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.row_note.view.*
 class NoteAdapter(val data: ArrayList<Note>) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
 
+    lateinit var onShowOptionMenu:OnShowOptionMenu;
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.row_note, parent, false);
         val holder = NoteViewHolder(view);
@@ -32,12 +34,16 @@ class NoteAdapter(val data: ArrayList<Note>) : RecyclerView.Adapter<NoteAdapter.
     }
 
 
-    class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val lblTitle = itemView.lblTitle as TextView
         val lblContent = itemView.lblContent as TextView
         val imgMenu = itemView.imgMenu as ImageView
-
+        init {
+            imgMenu.setOnClickListener {
+                onShowOptionMenu?.showOption(itemView,adapterPosition)
+            }
+        }
 
     }
 }

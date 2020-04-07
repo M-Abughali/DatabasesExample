@@ -5,7 +5,7 @@ import com.ghalym.databasesexample.SqliteExample.Note.data.Note
 
 interface IDisplayNoteView : ICommonView {
 
-    fun onDeletSuccess();
+    fun onDeletSuccess(position:Int);
     fun onDeleteAllSuccess();
     fun onFetchData(result: ArrayList<Note>);
 
