@@ -9,24 +9,19 @@
         tools:context=".sqliteExample.Note.NoteActivity">
 
     <Button
-            android:id="@+id/btnGoToSqliteExample"
+            android:id="@+id/btnGoToAddNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_example_sqlite"
+            android:text="@string/lbl_go_to_add"
     />
 
 
     <Button
-            android:id="@+id/btnGoToRealmExample"
+            android:id="@+id/btnGoToDisplayNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_example_realm"
+            android:text="@string/lbl_go_to_display_notes"
     />
 
-    <Button
-            android:id="@+id/btnGoToRoomExample"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/lbl_example_room"
-    />
+
 </LinearLayout>

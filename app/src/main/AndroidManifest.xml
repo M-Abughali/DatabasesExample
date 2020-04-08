@@ -9,32 +9,20 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-
-
-
+        <activity android:name=".MainActivity">
+        </activity>
         <activity android:name=".realmExample.Note.addNote.AddNoteActivity">
         </activity>
-
         <activity android:name=".realmExample.Note.displayNote.DisplayNotesActivity">
         </activity>
-
         <activity android:name=".realmExample.Note.updateNote.UpdateNoteActivity">
         </activity>
-
-
-
-
         <activity android:name=".sqliteExample.Note.addNote.AddNoteActivity">
         </activity>
-
         <activity android:name=".sqliteExample.Note.displayNote.DisplayNotesActivity">
         </activity>
-
-
         <activity android:name=".sqliteExample.Note.updateNote.UpdateNoteActivity">
         </activity>
-
-
         <activity android:name=".sqliteExample.Note.NoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

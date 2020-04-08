@@ -20,4 +20,10 @@
     <string name="delete_note">Delete Note</string>
     <string name="update_note">Update Note</string>
 
+
+
+    <string name="lbl_example_sqlite">Sqlite Example</string>
+    <string name="lbl_example_realm">Realm Example</string>
+    <string name="lbl_example_room">Room Example</string>
+
 </resources>

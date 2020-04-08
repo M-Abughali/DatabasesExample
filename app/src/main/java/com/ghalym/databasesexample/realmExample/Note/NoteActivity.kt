@@ -6,13 +6,13 @@ import android.os.Bundle
 import com.ghalym.databasesexample.R
 import com.ghalym.databasesexample.realmExample.Note.addNote.AddNoteActivity
 import com.ghalym.databasesexample.realmExample.Note.displayNote.DisplayNotesActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_note.*
 
 class NoteActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_note)
 
         btnGoToAddNote.setOnClickListener {
 
