@@ -1,11 +1,11 @@
-package com.ghalym.databasesexample.SqliteExample.Note
+package com.ghalym.databasesexample.sqliteExample.Note
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.SqliteExample.Note.addNote.AddNoteActivity
-import com.ghalym.databasesexample.SqliteExample.Note.displayNote.DisplayNotesActivity
+import com.ghalym.databasesexample.sqliteExample.Note.addNote.AddNoteActivity
+import com.ghalym.databasesexample.sqliteExample.Note.displayNote.DisplayNotesActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class NoteActivity : AppCompatActivity() {

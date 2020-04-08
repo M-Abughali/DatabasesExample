@@ -1,9 +1,9 @@
-package com.ghalym.databasesexample.SqliteExample.Note.displayNote
+package com.ghalym.databasesexample.realmExample.Note.displayNote
 
 import android.content.Context
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.SqliteExample.Note.data.NoteRepository
-import com.ghalym.databasesexample.SqliteExample.Note.data.Note
+import com.ghalym.databasesexample.realmExample.Note.data.NoteRepository
+import com.ghalym.databasesexample.realmExample.Note.data.Note
 
 class DisplayNotePresenter(val iDisplayNoteView: IDisplayNoteView, val context: Context) {
 

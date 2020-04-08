@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.displayNote
+package com.ghalym.databasesexample.sqliteExample.Note.displayNote
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,10 +8,8 @@ import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.SqliteExample.Note.data.Note
-import com.ghalym.databasesexample.SqliteExample.Note.displayNote.NoteAdapter
-import com.ghalym.databasesexample.SqliteExample.Note.updateNote.UpdateNoteActivity
-import kotlinx.android.synthetic.main.activity_add_note.*
+import com.ghalym.databasesexample.sqliteExample.Note.data.Note
+import com.ghalym.databasesexample.sqliteExample.Note.updateNote.UpdateNoteActivity
 import kotlinx.android.synthetic.main.activity_display_notes.*
 import kotlinx.android.synthetic.main.activity_display_notes.loader
 

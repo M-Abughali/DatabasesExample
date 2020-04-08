@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.displayNote
+package com.ghalym.databasesexample.realmExample.Note.displayNote
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.SqliteExample.Note.data.Note
+import com.ghalym.databasesexample.realmExample.Note.data.Note
 import kotlinx.android.synthetic.main.row_note.view.*
 
 class NoteAdapter(val data: ArrayList<Note>) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {

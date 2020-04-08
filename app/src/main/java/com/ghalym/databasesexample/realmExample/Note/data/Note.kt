@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.data
+package com.ghalym.databasesexample.realmExample.Note.data
 
 import java.io.Serializable
 

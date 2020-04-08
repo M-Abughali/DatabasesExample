@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.data
+package com.ghalym.databasesexample.realmExample.Note.data
 
 import android.content.ContentValues
 import android.content.Context

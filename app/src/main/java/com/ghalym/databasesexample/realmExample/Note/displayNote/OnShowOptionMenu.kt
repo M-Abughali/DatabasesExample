@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample.Note.displayNote
+package com.ghalym.databasesexample.realmExample.Note.displayNote
 
 import android.view.View
 

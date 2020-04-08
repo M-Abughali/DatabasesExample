@@ -1,4 +1,4 @@
-package com.ghalym.databasesexample.SqliteExample
+package com.ghalym.databasesexample.realmExample
 
 interface ICommonView {
     fun onShowLoading();
