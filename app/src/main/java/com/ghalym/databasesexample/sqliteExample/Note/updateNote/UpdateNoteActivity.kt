@@ -19,6 +19,7 @@ class UpdateNoteActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_update_note)
         presenter = UpdateNotePresenter(this, this);
+        supportActionBar?.title = getString(R.string.lbl_updateNoteActivity_title_Realm)
 
         val note = intent.getSerializableExtra("note") as Note;
         editTitle.setText(note.title)

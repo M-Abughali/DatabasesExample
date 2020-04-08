@@ -10,26 +10,25 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name=".realmExample.Note.addNote.AddNoteActivity">
-        </activity>
-        <activity android:name=".realmExample.Note.displayNote.DisplayNotesActivity">
-        </activity>
-        <activity android:name=".realmExample.Note.updateNote.UpdateNoteActivity">
-        </activity>
-        <activity android:name=".sqliteExample.Note.addNote.AddNoteActivity">
-        </activity>
-        <activity android:name=".sqliteExample.Note.displayNote.DisplayNotesActivity">
-        </activity>
-        <activity android:name=".sqliteExample.Note.updateNote.UpdateNoteActivity">
-        </activity>
-        <activity android:name=".sqliteExample.Note.NoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+
+
+        <activity android:name=".realmExample.Note.addNote.AddNoteActivity"/>
+        <activity android:name=".realmExample.Note.displayNote.DisplayNotesActivity"/>
+        <activity android:name=".realmExample.Note.updateNote.UpdateNoteActivity"/>
+        <activity android:name=".realmExample.Note.NoteActivity"/>
+
+
+        <activity android:name=".sqliteExample.Note.addNote.AddNoteActivity"/>
+        <activity android:name=".sqliteExample.Note.displayNote.DisplayNotesActivity"/>
+        <activity android:name=".sqliteExample.Note.updateNote.UpdateNoteActivity"/>
+        <activity android:name=".sqliteExample.Note.NoteActivity"/>
     </application>
 
 </manifest>

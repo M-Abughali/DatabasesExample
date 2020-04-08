@@ -13,6 +13,7 @@ class NoteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
+        supportActionBar?.title = getString(R.string.lbl_example_sqlite)
 
         btnGoToAddNote.setOnClickListener {
 

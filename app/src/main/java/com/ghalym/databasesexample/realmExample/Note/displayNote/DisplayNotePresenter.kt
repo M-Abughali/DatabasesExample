@@ -10,13 +10,13 @@ class DisplayNotePresenter(val iDisplayNoteView: IDisplayNoteView, val context: 
     val noteRepository: NoteRepository;
 
     init {
-        noteRepository = NoteRepository(context, null);
+        noteRepository = NoteRepository(context);
     }
 
     fun removeNoteFromDb(note: Note,position:Int) {
         iDisplayNoteView.onShowLoading()
         val result = noteRepository.removeNoteFromDb(note);
-        if (result) iDisplayNoteView.onDeletSuccess(position) else iDisplayNoteView.onError(context.getString(R.string.delete_note_error))
+         iDisplayNoteView.onDeletSuccess(position)// else iDisplayNoteView.onError(context.getString(R.string.delete_note_error))
         iDisplayNoteView.onHideLoading()
 
     }

@@ -21,6 +21,8 @@ class DisplayNotesActivity : AppCompatActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display_notes)
+        supportActionBar?.title = getString(R.string.lbl_displayNotesActivity_title_Sqlite)
+
         presenter = DisplayNotePresenter(this, this);
         adapter = NoteAdapter(data);
         adapter.onShowOptionMenu = this

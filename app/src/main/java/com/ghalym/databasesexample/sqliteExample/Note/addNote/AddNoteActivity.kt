@@ -15,6 +15,8 @@ class AddNoteActivity : AppCompatActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_note)
+        supportActionBar?.title = getString(R.string.lbl_addNoteActivity_title_Sqlite)
+
         presenter = AddNotePresenter(this, this);
 
         btnAdd.setOnClickListener {

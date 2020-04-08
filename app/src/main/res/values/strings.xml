@@ -9,7 +9,7 @@
     <string name="delete_allNotes_error">Error in delete all notes</string>
 
     <string name="lbl_go_to_add">Go to Add Note</string>
-    <string name="lbl_go_to_display_notes">Go to Add Note</string>
+    <string name="lbl_go_to_display_notes">Go to Display Note</string>
     <string name="delete_all_notes">Delete all Notes</string>
 
 
@@ -21,9 +21,23 @@
     <string name="update_note">Update Note</string>
 
 
-
     <string name="lbl_example_sqlite">Sqlite Example</string>
     <string name="lbl_example_realm">Realm Example</string>
     <string name="lbl_example_room">Room Example</string>
+
+
+
+    <string name="lbl_addNoteActivity_title_Sqlite">Add Note => Sqlite Example</string>
+    <string name="lbl_addNoteActivity_title_Realm">Add Note => Realm Example</string>
+    <string name="lbl_addNoteActivity_title_Room">Add Note => Room Example</string>
+
+    <string name="lbl_updateNoteActivity_title_Sqlite">Update Note => Sqlite Example</string>
+    <string name="lbl_updateNoteActivity_title_Realm">Update Note => Realm Example</string>
+    <string name="lbl_updateNoteActivity_title_Room">Update Note => Room Example</string>
+
+
+    <string name="lbl_displayNotesActivity_title_Sqlite">Display Notes => Sqlite Example</string>
+    <string name="lbl_displayNotesActivity_title_Realm">Display Notes => Realm Example</string>
+    <string name="lbl_displayNotesActivity_title_Room">Display Notes => Room Example</string>
 
 </resources>

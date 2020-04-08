@@ -14,6 +14,7 @@ class NoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
 
+        supportActionBar?.title = getString(R.string.lbl_example_sqlite)
         btnGoToAddNote.setOnClickListener {
 
             val intent = Intent(this, AddNoteActivity::class.java);
@@ -26,5 +27,7 @@ class NoteActivity : AppCompatActivity() {
             val intent = Intent(this, DisplayNotesActivity::class.java);
             startActivity(intent)
         }
+
+
     }
 }

@@ -10,14 +10,15 @@ class AddNotePresenter(val iAddNoteView: IAddNoteView, val context: Context) {
     val noteRepository: NoteRepository;
 
     init {
-        noteRepository = NoteRepository(context, null);
+        noteRepository = NoteRepository(context);
     }
 
     fun addNote(note: Note) {
         iAddNoteView.onShowLoading()
         val result = noteRepository.insertNoteToDb(note);
         iAddNoteView.onHideLoading()
-        if (result) iAddNoteView.onAddSuccess() else iAddNoteView.onError(context.getString(R.string.insert_error))
+        //if (result)
+            iAddNoteView.onAddSuccess() //else iAddNoteView.onError(context.getString(R.string.insert_error))
     }
 
 
