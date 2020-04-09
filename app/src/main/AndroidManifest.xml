@@ -25,6 +25,11 @@
         <activity android:name=".realmExample.Note.NoteActivity"/>
 
 
+        <activity android:name=".roomExample.Note.addNote.AddNoteActivity"/>
+        <activity android:name=".roomExample.Note.displayNote.DisplayNotesActivity"/>
+        <activity android:name=".roomExample.Note.updateNote.UpdateNoteActivity"/>
+        <activity android:name=".roomExample.Note.NoteActivity"/>
+
         <activity android:name=".sqliteExample.Note.addNote.AddNoteActivity"/>
         <activity android:name=".sqliteExample.Note.displayNote.DisplayNotesActivity"/>
         <activity android:name=".sqliteExample.Note.updateNote.UpdateNoteActivity"/>
