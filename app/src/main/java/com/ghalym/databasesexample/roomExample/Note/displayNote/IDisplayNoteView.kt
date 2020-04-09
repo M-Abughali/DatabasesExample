@@ -7,6 +7,6 @@ interface IDisplayNoteView : ICommonView {
 
     fun onDeletSuccess(position:Int);
     fun onDeleteAllSuccess();
-    fun onFetchData(result: ArrayList<Note>);
+    fun onFetchData(result: List<Note>);
 
 }

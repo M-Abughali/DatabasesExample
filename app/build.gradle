@@ -41,13 +41,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
-    def roomVersion = "2.2.5"
-    implementation "androidx.room:room-runtime:$roomVersion"
-    kapt "androidx.room:room-compiler:$roomVersion"
-    androidTestImplementation "androidx.room:room-testing:$roomVersion"
-
-
-    // For Kotlin use kapt instead of annotationProcessor
-
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    //kapt "androidx.room:room-compiler:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+    kapt "android.arch.persistence.room:compiler:1.1.1"
 
 }

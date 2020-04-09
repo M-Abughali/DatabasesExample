@@ -2,7 +2,7 @@ package com.ghalym.databasesexample.roomExample.Note.data
 
 import androidx.room.*
 
-class NoteRepository(private val noteDao: NoteDao) {
+class NoteRepository(val noteDao: NoteDao) {
 
     fun insertNoteToDb(note: Note) {
         noteDao.insertNoteToDb(note)
@@ -12,7 +12,7 @@ class NoteRepository(private val noteDao: NoteDao) {
         noteDao.removeNoteFromDb(note)
     }
 
-    fun getAllNote(): ArrayList<Note> {
+    fun getAllNote(): List<Note> {
         return noteDao.getAllNote();
     }
 
@@ -21,7 +21,7 @@ class NoteRepository(private val noteDao: NoteDao) {
         return true;
     }
 
-    fun updateNote( note: Note) {
+    fun updateNote(note: Note) {
         noteDao.updateNote(note)
     }
 

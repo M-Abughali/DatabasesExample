@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.realmExample.Note.data.Note
+import com.ghalym.databasesexample.roomExample.Note.data.Note
 import kotlinx.android.synthetic.main.activity_add_note.editContent
 import kotlinx.android.synthetic.main.activity_add_note.editTitle
 import kotlinx.android.synthetic.main.activity_add_note.loader
@@ -21,7 +21,7 @@ class UpdateNoteActivity : AppCompatActivity(),
         presenter = UpdateNotePresenter(this, this);
         supportActionBar?.title = getString(R.string.lbl_updateNoteActivity_title_Room)
 
-        val note = intent.getParcelableExtra("note") as Note;
+        val note = intent.getSerializableExtra("note") as Note;
         editTitle.setText(note.title)
         editContent.setText(note.content)
         btnUpdate.setOnClickListener {

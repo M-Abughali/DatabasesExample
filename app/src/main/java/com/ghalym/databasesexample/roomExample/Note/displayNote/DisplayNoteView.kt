@@ -49,7 +49,7 @@ class DisplayNotesActivity : AppCompatActivity(),
     override fun onDeleteAllSuccess() {
     }
 
-    override fun onFetchData(result: ArrayList<Note>) {
+    override fun onFetchData(result: List<Note>) {
         data.addAll(result);
         adapter.notifyDataSetChanged();
     }
