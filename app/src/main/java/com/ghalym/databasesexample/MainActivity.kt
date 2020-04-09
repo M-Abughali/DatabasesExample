@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             var intent= Intent(this,com.ghalym.databasesexample.sqliteExample.Note.NoteActivity::class.java);
             startActivity(intent)
         }
-        
+
         btnGoToRealmExample.setOnClickListener {
             var intent= Intent(this,com.ghalym.databasesexample.realmExample.Note.NoteActivity::class.java);
             startActivity(intent)

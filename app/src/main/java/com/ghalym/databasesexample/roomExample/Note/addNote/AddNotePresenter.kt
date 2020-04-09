@@ -1,16 +1,15 @@
 package com.ghalym.databasesexample.roomExample.Note.addNote
 
 import android.content.Context
-import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.roomExample.Note.data.NoteRepository
+import com.ghalym.databasesexample.roomExample.Note.data.NoteDao
 import com.ghalym.databasesexample.roomExample.Note.data.Note
 
 class AddNotePresenter(val iAddNoteView: IAddNoteView, val context: Context) {
 
-    val noteRepository: NoteRepository;
+    val noteRepository: NoteDao;
 
     init {
-        noteRepository = NoteRepository(context);
+        noteRepository = NoteDao();
     }
 
     fun addNote(note: Note) {

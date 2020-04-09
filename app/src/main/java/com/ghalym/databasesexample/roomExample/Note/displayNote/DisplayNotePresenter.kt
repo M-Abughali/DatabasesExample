@@ -2,15 +2,15 @@ package com.ghalym.databasesexample.roomExample.Note.displayNote
 
 import android.content.Context
 import com.ghalym.databasesexample.R
-import com.ghalym.databasesexample.roomExample.Note.data.NoteRepository
+import com.ghalym.databasesexample.roomExample.Note.data.NoteDao
 import com.ghalym.databasesexample.roomExample.Note.data.Note
 
 class DisplayNotePresenter(val iDisplayNoteView: IDisplayNoteView, val context: Context) {
 
-    val noteRepository: NoteRepository;
+    val noteRepository: NoteDao;
 
     init {
-        noteRepository = NoteRepository(context);
+        noteRepository = NoteDao(context);
     }
 
     fun removeNoteFromDb(note: Note,position:Int) {
