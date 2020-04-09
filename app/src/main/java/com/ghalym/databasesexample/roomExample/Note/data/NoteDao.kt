@@ -17,7 +17,7 @@ interface NoteDao {
     fun getAllNote(): ArrayList<Note>
 
     @Query("delete from note_table")
-    suspend fun deleteAllNotes(): Boolean
+     fun deleteAllNotes(): Boolean
 
     @Update()
     fun updateNote(vararg note: Note)
