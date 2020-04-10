@@ -5,11 +5,11 @@ the first one is an example for sqlite
 the other one is an example for realm 
 and the last one is for Room
 
-Technology used
-<h3>Android</h3>
-<h3>Kotlin</h3>
-<h3>MVP</h3>
-<h3>Recyclerview</h3>
-<h3>SQlite</h3>
-<h3>Realm</h3>
-<h3>Room</h3>
+<h1>Technology used<h1/>
+<h5>Android</h5>
+<h5>Kotlin</h5>
+<h5>MVP</h5>
+<h5>Recyclerview</h5>
+<h5>SQlite</h5>
+<h5>Realm</h5>
+<h5>Room</h5>
