@@ -7,11 +7,12 @@ and the last one is for Room
 
 <h2>Technology used<h2/>
   <ul>
-<li><h5>Android</h5><li/>
-<li><h5>Kotlin</h5><li/>
-<li><h5>MVP</h5><li/>
-<li><h5>Recyclerview</h5><li/>
-<li><h5>SQlite</h5><li/>
-<li><h5>Realm</h5><li/>
-<li><h5>Room</h5><li/>
+<h5><li>Android</li></h5>
+<h5><li>Kotlin</li></h5>
+<h5><li>MVP</li></h5>
+<h5><li>Recyclerview</li></h5>
+<h5><li>SQlite</li></h5>
+<h5><li>Realm</li></h5>
+<h5><li>Room</li></h5>
+<h5><li>Threads</li></h5>
   </ul>
