@@ -5,32 +5,26 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = arrayOf(Note::class), version = 1, exportSchema = false)
-abstract class NoteDatabase() : RoomDatabase() {
+
+@Database(
+    entities = [Note::class],
+    version = 1
+)
+abstract class AppDatabase : RoomDatabase(){
     abstract fun noteDao(): NoteDao
 
-
     companion object {
-        // Singleton prevents multiple instances of database opening at the
-        // same time. 
-        @Volatile
-        private var INSTANCE: NoteDatabase? = null
+        @Volatile private var instance: AppDatabase? = null
+        private val LOCK = Any()
 
-        fun getDatabase(context: Context): NoteDatabase {
-            val tempInstance = INSTANCE
-            if (tempInstance != null) {
-                return tempInstance
-            }
-            synchronized(this) {
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    NoteDatabase::class.java,
-                    "note_database"
-                ).build()
-                INSTANCE = instance
-                return instance
-            }
+        operator fun invoke(context: Context)= instance ?: synchronized(LOCK){
+            instance ?: buildDatabase(context).also { instance = it}
         }
-    }
 
+        private fun buildDatabase(context: Context) = Room.databaseBuilder(context,
+            AppDatabase::class.java, "note-list.db")
+            .build()
+    }
 }
+
+
