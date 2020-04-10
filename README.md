@@ -6,12 +6,12 @@ the other one is an example for realm
 and the last one is for Room
 
 <h2>Technology used<h2/>
-  <li>
-<h5><ul>Android<ul/></h5>
-<h5><ul>Kotlin<ul/></h5>
-<h5><ul>MVP<ul/></h5>
-<h5><ul>Recyclerview<ul/></h5>
-<h5><ul>SQlite<ul/></h5>
-<h5><ul>Realm<ul/></h5>
-<h5><ul>Room<ul/></h5>
-  </li>
+  <ul>
+<li><h5>Android</h5><li/>
+<li><h5>Kotlin</h5><li/>
+<li><h5>MVP</h5><li/>
+<li><h5>Recyclerview</h5><li/>
+<li><h5>SQlite</h5><li/>
+<li><h5>Realm</h5><li/>
+<li><h5>Room</h5><li/>
+  </ul>
